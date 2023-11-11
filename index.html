@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&family=Roboto:wght@400;500;900&family=Teko:wght@700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+		.main{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+			text-align: center;
+		}
+		.rock {
+			width: 100%;
+			height: 100%;
+			max-width: 400px;
+			display: block; 
+			margin: 0 auto; 
+		}
+		.title{
+			font-size: 72px;
+		}
+		.searchBox {
+    border: 2px solid black;
+    width: 500px;
+    height: 40px;
+    margin: 20px auto; 
+    display: flex;
+    align-items: center; 
+    font-size: 18px;
+    text-align: center;
+    border-radius: 25px; 
+}
+
+#ask {
+    height: 100%; 
+    width: 80%; 
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+button {
+    height: 100%;
+    width: 20%;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: -2px; /* Adjusted margin to eliminate any gap between the button and the input field */
+    font-weight: bold; /* Added bold font weight for better visibility */
+    transition: background-color 0.3s; /* Added a smooth transition effect for hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover for a subtle effect */
+}
+.bx-search{
+	padding-left: 10px;
+}
+	</style>
+	<title>Rock Engine</title>
+</head>
+<body>
+	<div class="main">
+		<h1 class="title">Rock Engine</h1>
+	<img src="rock.png" class="rock">
+	<div class="searchBox">
+	<i class='bx bx-search'></i><input type="text" name="ask" id="ask"><button onclick="Search()">Search</button>
+	</div>
+
+	<script type="text/javascript">
+		function Search() {
+			document.querySelector('.main').innerHTML = ' '
+			document.querySelector('.main').innerHTML = `<img src="puck u.png" class="rock"> <h2>Rock's answer is fuck you</h2>`
+		}
+	</script>
+	
+</body>
+</html>
